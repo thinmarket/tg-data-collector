@@ -18,7 +18,7 @@ import json
 # ========== НАСТРОЙКИ ==========
 API_ID = 12345678
 API_HASH = 'Введите свой API_HASH'
-CHANNEL_USERNAME = 'Введите username канала'
+CHANNEL_USERNAME = 'Введите username канала без @'
 # ================================
 
 ALPHABET = [
@@ -293,4 +293,5 @@ async def main():
         await collector.close()
 
 if __name__ == '__main__':
+
     asyncio.run(main())
